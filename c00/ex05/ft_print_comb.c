@@ -3,7 +3,6 @@
 void write_n(char v[]){
     if (v[0] == '7' && v[1] == '8' && v[2] == '9'){
         write(1, v, 3);
-        // write(1, ".\n", 2);
     }else{
         write(1, v, 5);
     }
