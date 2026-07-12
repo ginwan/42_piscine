@@ -1,30 +1,17 @@
+
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ginwan <ginwan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/07/12 13:52:57 by ginwan            #+#    #+#             */
-/*   Updated: 2026/07/12 16:40:17 by ginwan           ###   ########.fr       */
+/*   Created: 2026/07/12 16:40:04 by ginwan            #+#    #+#             */
+/*   Updated: 2026/07/12 16:40:05 by ginwan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-void ft_swap(int *a, int *b){
-    int temp;
-    
-    temp = *a;
-    *a = *b;
-    *b = temp;
-}
-
-int main(void){
-    int a = 5;
-    int b = 20;
-    printf("before swap: %d %d\n", a,b);
-    ft_swap(&a, &b);
-    printf("after swap: %d %d\n", a,b);
-    return (0);
+void ft_div_mod(int a, int b, int *div, int *mod){
+    *div = a/b;
+    *mod = a%b;
 }
