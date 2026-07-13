@@ -1,25 +1,28 @@
-
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ginwan <ginwan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/07/12 13:44:32 by ginwan            #+#    #+#             */
-/*   Updated: 2026/07/12 13:44:33 by ginwan           ###   ########.fr       */
+/*   Created: 2026/07/13 14:11:09 by ginwan            #+#    #+#             */
+/*   Updated: 2026/07/13 14:22:51 by ginwan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 
-void ft_ft(int *nbr)
-{
-    *nbr = 42;
+void ft_putstr(char *str){
+    int i = 0;
+
+    while(str[i]){
+        write(1, &str[i], 1);
+        i++;
+    }
 }
 
-// int main(void)
-// {
-//     int number;
-//     ft_ft(&number);
-//     return 0;
-// }
+int main(void){
+    ft_putstr("Ginwan");
+    write(1, "\n", 1);
+    return (0);
+}

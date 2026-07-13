@@ -1,25 +1,22 @@
-
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ginwan <ginwan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/07/12 13:44:32 by ginwan            #+#    #+#             */
-/*   Updated: 2026/07/12 13:44:33 by ginwan           ###   ########.fr       */
+/*   Created: 2026/07/12 17:08:46 by ginwan            #+#    #+#             */
+/*   Updated: 2026/07/12 17:11:31 by ginwan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-void ft_ft(int *nbr)
+void ft_ultimate_div_mod(int *a, int *b)
 {
-    *nbr = 42;
-}
+    int div;
+    int mod;
 
-// int main(void)
-// {
-//     int number;
-//     ft_ft(&number);
-//     return 0;
-// }
+    div = *a / *b;
+    mod = *a % *b;
+    *a = div;
+    *b = mod;
+}
