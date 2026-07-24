@@ -1,7 +1,7 @@
 
 #include <unistd.h>
 
-int ft_strlen(char *str){
+int ft_putstr(char *str){
     int i = 0;
     
     while (str[i] != '\0')
@@ -16,7 +16,7 @@ int ft_strlen(char *str){
 int main(void){
     char str[] = "Hello, this Ginwan.";
 
-    ft_strlen(str);
+    ft_putstr(str);
     // printf("%d\n", res);
     return 0;
 }
