@@ -57,12 +57,14 @@ void ft_putnbr_base(int nbr, char *base){
 		n *= -1;
 	}
 	i = 0;
+    // converting process
 	while (n > 0)
 	{
 		box[i] = base[n % size];
 		n = n / size;
 		i++;
 	}
+    // Printing backwards
 	while (--i >= 0)
 		ft_putchar(box[i]);
 
